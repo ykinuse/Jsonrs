@@ -29,8 +29,8 @@ defmodule Jsonrs.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:rustler, "~> 0.21.0"},
-      {:ex_doc, "~> 0.21", only: :dev, runtime: false},
+      {:rustler, "~> 0.22.0"},
+      {:ex_doc, "~> 0.21", only: :dev, runtime: false}
     ]
   end
 
@@ -51,7 +51,15 @@ defmodule Jsonrs.MixProject do
       maintainers: ["Ben Haney"],
       licenses: ["Unlicense"],
       links: %{"GitHub" => "https://github.com/benhaney/jsonrs"},
-      files: ["lib", "mix.exs", "README*", "native/jsonrs/src", "native/jsonrs/.cargo", "native/jsonrs/README*", "native/jsonrs/Cargo*"]
+      files: [
+        "lib",
+        "mix.exs",
+        "README*",
+        "native/jsonrs/src",
+        "native/jsonrs/.cargo",
+        "native/jsonrs/README*",
+        "native/jsonrs/Cargo*"
+      ]
     ]
   end
 
